@@ -25,3 +25,5 @@ func main() {
 	print(zigzag)
 
 }
+
+//day one: Basics
