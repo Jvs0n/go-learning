@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	// Create the persistent AddNumbers closure
 	AddNumbers := makeAdder()
 
 	count, sum := AddNumbers(1, 2, 3)
@@ -14,7 +13,6 @@ func main() {
 	fmt.Println("Count:", count, "Sum:", sum)
 }
 
-// makeAdder returns a closure that remembers totals
 func makeAdder() func(nums ...int) (int, int) {
 	count, sum := 0, 0 // variables captured by closure
 
